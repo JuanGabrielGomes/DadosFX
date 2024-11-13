@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tecinfo.poo.controller.StartController">
+    <Label text="Jogo de Dados - Adicionar Jogadores" />
+    <HBox spacing="10.0">
+        <TextField fx:id="nameTextField" promptText="Nome do Jogador" />
+        <TextField fx:id="betTextField" promptText="Aposta" />
+        <Button text="Adicionar Jogador" onAction="#handleAddPlayer" />
+    </HBox>
+    <ListView fx:id="playerListView" prefHeight="150.0" />
+    <Button text="Iniciar Jogo" onAction="#handleStartGame" />
+</VBox>

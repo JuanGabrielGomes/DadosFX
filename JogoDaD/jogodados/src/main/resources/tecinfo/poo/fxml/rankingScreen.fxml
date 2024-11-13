@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tecinfo.poo.controller.RankingController">
+    <Label text="Ranking de Vitórias" />
+    <TableView fx:id="rankingTableView" prefHeight="200.0">
+        <columns>
+            <TableColumn fx:id="nameColumn" text="Jogador" />
+            <TableColumn fx:id="winsColumn" text="Vitórias" />
+        </columns>
+    </TableView>
+    <Button text="Voltar" onAction="#handleBackToStart" />
+</VBox>
